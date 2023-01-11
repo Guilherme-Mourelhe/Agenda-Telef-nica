@@ -23,12 +23,23 @@ const styles = StyleSheet.create({
     },
     TextApp: {
         color: "orange",
-        marginTop: 50,
+        marginTop: 40,
         fontWeight: "bold",
         fontSize: 18
-
-
-
+    },
+    ImageApp2: {
+        resizeMode: "contain",
+        width: 100,
+        height: 100,
+        borderRadius: 50,
+        marginTop: 5
+    },
+    TextApp2: {
+        color: "orange",
+        marginTop: 20,
+        fontWeight: "bold",
+        fontSize: 18,
+        marginBottom: 20,
     }
 
 });

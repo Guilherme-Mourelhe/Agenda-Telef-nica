@@ -5,8 +5,9 @@ import styles from './styles'
 export default function Contacts({ navigation }) {
   return (
     <View style={styles.BodyContacts}>
-      <Text> Ricardo Azevedo </Text>
-      <Text> Telefone: (32) 99456-0975</Text>
+      <Text style={styles.Space}> CONTATOS </Text>
+      <Text style={styles.TextContact}> Ricardo Azevedo </Text>
+      <Text style={styles.TextContact}> Telefone: (32) 99456-0975</Text>
       <Text
         onPress={() =>
           navigation.navigate("Informations", {
@@ -23,8 +24,8 @@ export default function Contacts({ navigation }) {
       </Text>
 
       <View style={{ marginTop: 30 }}>
-        <Text> Luana Rocha </Text>
-        <Text> Telefone: (32) 99676-2975</Text>
+        <Text style={styles.TextContact}> Luana Rocha </Text>
+        <Text style={styles.TextContact}> Telefone: (32) 99676-2975</Text>
         <Text
           onPress={() =>
             navigation.navigate("Informations", {
