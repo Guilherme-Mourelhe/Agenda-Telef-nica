@@ -9,6 +9,8 @@ const styles = StyleSheet.create ({
     TextContact: {
         color: "white",
         marginLeft: 20,
+        fontWeight: "bold",
+        fontSize: 18
        
     },
     Space: {
@@ -18,6 +20,12 @@ const styles = StyleSheet.create ({
         fontWeight: "bold",
         fontSize: 28,
         marginBottom: 30
+    },
+    MoreInformation: {
+        color: "orange",
+        fontWeight: "bold",
+        marginLeft: 28  ,
+        fontSize: 14    
     }
 
 

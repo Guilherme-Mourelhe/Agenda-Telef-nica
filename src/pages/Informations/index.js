@@ -4,12 +4,13 @@ import styles from './styles'
 export default function Information({ route }) {
   return (
     <View style={styles.BodyInformation}>
-      <Text> Nome: {route.params?.Nome} </Text>
-      <Text> Telefone: {route.params?.Telefone} </Text>
-      <Text> Endereço: {route.params?.Endereço} </Text>
-      <Text> n°: {route.params?.Número}</Text>
-      <Text> Profissão: {route.params?.Profissão} </Text>
-      <Text> Email: {route.params?.Email} </Text>
+      <Text style={styles.TextInfo}>INFORMAÇÕES</Text>
+      <Text style={styles.InfoText}> Nome: {route.params?.Nome} </Text>
+      <Text style={styles.InfoText}> Telefone: {route.params?.Telefone} </Text>
+      <Text style={styles.InfoText}> Endereço: {route.params?.Endereço} </Text>
+      <Text style={styles.InfoText}> n°: {route.params?.Número}</Text>
+      <Text style={styles.InfoText}> Profissão: {route.params?.Profissão} </Text>
+      <Text style={styles.InfoText}> Email: {route.params?.Email} </Text>
     </View>
   );
 }

@@ -62,7 +62,7 @@ export default function App() {
           component={Tabs}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Informations" component={Informations} />
+        <Stack.Screen name="Informations" component={Informations} options={{ headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
