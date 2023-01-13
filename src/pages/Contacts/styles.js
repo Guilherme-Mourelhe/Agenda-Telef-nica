@@ -26,6 +26,20 @@ const styles = StyleSheet.create ({
         fontWeight: "bold",
         marginLeft: 28  ,
         fontSize: 14    
+    },
+    AddInfo: {
+        backgroundColor: "orange",
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        alignItems: "center",
+        position: "absolute",
+        marginTop: 550,
+        marginLeft: 320,
+    },
+    AlignIcon: {
+        marginLeft: 3,
+        marginBottom: 6
     }
 
 

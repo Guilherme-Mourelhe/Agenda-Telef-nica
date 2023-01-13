@@ -8,7 +8,6 @@ export default function Information({ route }) {
       <Text style={styles.InfoText}> Nome: {route.params?.Nome} </Text>
       <Text style={styles.InfoText}> Telefone: {route.params?.Telefone} </Text>
       <Text style={styles.InfoText}> Endereço: {route.params?.Endereço} </Text>
-      <Text style={styles.InfoText}> n°: {route.params?.Número}</Text>
       <Text style={styles.InfoText}> Profissão: {route.params?.Profissão} </Text>
       <Text style={styles.InfoText}> Email: {route.params?.Email} </Text>
     </View>

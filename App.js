@@ -2,14 +2,18 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 import Contacts from "./src/pages/Contacts";
 import Informations from "./src/pages/Informations";
 import AppContacts from "./src/pages/AppContacts";
+import AddContact from "./src/pages/AddContact";
+
 import styles from "./src/pages/MainStyles";
-import { View } from "react-native";
+
 import { Ionicons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
+
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -53,6 +57,7 @@ function Tabs() {
   );
 }
 
+//Função principal com Stack Navigator
 export default function App() {
   return (
     <NavigationContainer>
@@ -62,7 +67,8 @@ export default function App() {
           component={Tabs}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Informations" component={Informations} options={{ headerShown: false}} />
+        <Stack.Screen name ="Informations" component={Informations} options={{ headerShown: false}} />
+        <Stack.Screen name = "AddContact" component={AddContact} options ={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
   );

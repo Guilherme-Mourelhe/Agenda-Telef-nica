@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import styles from "./styles";
-
+import { Ionicons } from "@expo/vector-icons";
+import AddContact from "../AddContact";
 export default function Contacts({ navigation }) {
   return (
     <View style={styles.BodyContacts}>
@@ -14,7 +15,6 @@ export default function Contacts({ navigation }) {
             Nome: "Ricardo Azevedo",
             Telefone: "(32) 99456-0975",
             Endereço: "Rua Getúlio Vargas",
-            Número: "364",
             Profissão: "Enfermeiro",
             Email: "azevedoricardo@gmail.com",
           })
@@ -32,7 +32,6 @@ export default function Contacts({ navigation }) {
               Nome: "Vanessa",
               Telefone: "(21) 99072-7390",
               Endereço: "Rua das Neves",
-              Número: "75",
               Profissão: "Engenheira",
               Email: "vanessa.eng@gmail.com",
             })
@@ -51,7 +50,6 @@ export default function Contacts({ navigation }) {
               Nome: "Lucas Guidine",
               Telefone: "(32) 95643-3281",
               Endereço: "Rua C",
-              Número: "28",
               Profissão: "Desenvolvedor",
               Email: "lucasguidine.dev@gmail.com",
             })
@@ -70,7 +68,6 @@ export default function Contacts({ navigation }) {
               Nome: "Vanessa",
               Telefone: "(21) 99072-7390",
               Endereço: "Rua das Neves",
-              Número: "75",
               Profissão: "Engenheira",
               Email: "vanessa.eng@gmail.com",
             })
@@ -89,7 +86,6 @@ export default function Contacts({ navigation }) {
               Nome: "Vanessa",
               Telefone: "(21) 99072-7390",
               Endereço: "Rua das Neves",
-              Número: "75",
               Profissão: "Engenheira",
               Email: "vanessa.eng@gmail.com",
             })
@@ -98,6 +94,13 @@ export default function Contacts({ navigation }) {
           Information...
         </Text>
       </View>
+
+        <TouchableOpacity style={styles.AddInfo} onPress={ () => navigation.navigate("AddContact")}>
+          <Text style={styles.AlignIcon}>
+          <Ionicons name="add-circle-sharp" size={47} color="black"/>
+          </Text>
+          </TouchableOpacity>
+
     </View>
   );
 }
